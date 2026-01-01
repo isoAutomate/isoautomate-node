@@ -1,0 +1,27 @@
+{
+  "name": "isoautomate",
+  "version": "0.1.0",
+  "description": "Official Node.js SDK for the isoAutomate Sovereign Browser Infrastructure.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "browser",
+    "automation",
+    "selenium",
+    "cdp",
+    "scraping",
+    "redis"
+  ],
+  "author": "isoAutomate Team",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ioredis": "^5.3.2",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

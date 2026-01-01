@@ -1,0 +1,13 @@
+node_modules/
+.env
+.DS_Store
+
+# Logs
+npm-debug.log*
+
+# Runtime Artifacts
+screenshots/
+cookies.json
+*.pdf
+*.png
+*.html

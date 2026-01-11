@@ -2,26 +2,37 @@
   "name": "isoautomate",
   "version": "0.1.0",
   "description": "Official Node.js SDK for the isoAutomate Sovereign Browser Infrastructure.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf dist && tsc",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "browser",
     "automation",
+    "puppeteer",
     "selenium",
-    "cdp",
-    "scraping",
-    "redis"
+    "scraping"
   ],
-  "author": "isoAutomate Team",
+  "author": "isoAutomate Team <support@isoautomate.com>",
   "license": "MIT",
-  "dependencies": {
-    "dotenv": "^16.3.1",
-    "ioredis": "^5.3.2",
-    "uuid": "^9.0.1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isoautomate/isoautomate-node"
   },
-  "engines": {
-    "node": ">=16.0.0"
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.4.1",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/uuid": "^10.0.0",
+    "rimraf": "^5.0.7",
+    "typescript": "^5.5.3"
   }
 }

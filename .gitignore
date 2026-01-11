@@ -1,13 +1,10 @@
 node_modules/
+dist/
 .env
 .DS_Store
 
-# Logs
-npm-debug.log*
-
-# Runtime Artifacts
 screenshots/
-cookies.json
+# *.png
+*.jpg
 *.pdf
-*.png
 *.html
